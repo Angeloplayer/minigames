@@ -12,7 +12,7 @@ const gnomo = document.getElementById("gnomo");
 // Variabili per salvare gli ID dei loop
 let intervalIdPowerup3 = null;
 let intervalIdPowerup4 = null;
-let score = 100000;
+let score = 0;
 let increment = 1;
 score_board.innerText = score;
 
@@ -117,6 +117,7 @@ powerup7.addEventListener("click", function () {
     // Controlla se ci sono abbastanza punti
     score -= 10000; // Scala i punti
     score_board.innerText = score; // Aggiorna il punteggio
+    score_board.style.zIndex = "9999"; // Porta il punteggio in primo piano
     gnomo.style.position = "absolute"; // Mostra il gnomo
     gnomo.style.top = "0"; // Posiziona il gnomo in alto
     gnomo.style.left = "0"; // Posiziona il gnomo a sinistra
