@@ -59,6 +59,13 @@ main {
   max-width: 100%;
 }
 
+#powerup4,
+#powerup5,
+#powerup6,
+#powerup7 {
+  display: none;
+}
+
 /* Stile per dispositivi mobili */
 @media (max-width: 768px) {
   .powerup_container,
